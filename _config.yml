@@ -1,0 +1,70 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: The Lumen Protocol
+email: support@lumen.pro
+description: >- # this means to ignore newlines until "baseurl:"
+  Our mission is to allow professionals and employers trust each other so that they can do business together faster.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://www.lumen.pro" # the base hostname & protocol for your site, e.g. http://example.com
+# twitter_username: jekyllrb
+# github_username: joinmonday
+
+header_pages:
+  - about.md
+  # - team.md
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+
+sass:
+  sass_dir: _sass
+  # style: compressed
+
+
+copy:
+  landing:
+    value_props:
+      - title: Hard Skills Simplified
+        description: |+
+          <p>Evaluating hard skills is hard. Automated online tests that evaluate job seekers miss the mark by not being able to prove the problem-solving abilities of professionals. Offline approaches, like degrees or diplomas, follow different standards of quality, are hard to verify and are not universal.</p>
+          <p>With Lumen, experts endorse each other creating together a universal reputation system for hard skills.</p>
+        image: /assets/images/skills-simplified.svg
+      - title: Incentives will mobilize your network
+        description: |+
+          <p>You might think that to get experts involved evaluating each other is hard. Just the contrary, Lumen has embedded a system of incentives that engages every player by rewarding them for their contribution, combining both social capital and financial incentives.</p>
+          <p>Thanks to this system of incentives, professionals within each network will be more engaged than ever in your network.</p>
+        image: /assets/images/incentives.svg
+      - title: Employers will find talent faster
+        description: |+
+          <p>To know the level of skill of professionals will speed up the process of finding talent for employers. Instead of wasting time evaluating unqualified talent, they can now focus their time getting to know qualified professionals.</p>
+          <p>This system of expert-rating is universal and employers from all across the world can use it reliably.</p>
+        image: /assets/images/employers.svg
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

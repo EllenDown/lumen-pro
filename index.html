@@ -1,0 +1,43 @@
+---
+layout: full-width
+---
+
+<div class="home">
+
+  <div class='main-hero'>
+    <h1 class="page-heading">The Lumen Protocol</h1>
+    <p class="page-subtitle">Irradiating trust in profesional relationships.</p>
+    <div class='buttons'>
+      <a class='btn primary-btn' href="https://github.com/joinmonday/endorsement-tokens">Get Started</a>
+    </div>
+
+  </div>
+
+  <div class="value-props">
+
+    {% for prop in site.copy.landing.value_props %}
+      <div class="value-prop value-prop{{ forloop.index }}">
+        <div class="image-wrapper">
+          <img src="{{ prop.image | relative_url }}"/>
+        </div>
+        <div class="text-wrapper">
+          <h1>{{ prop.title }}</h1>
+          <div class="description">
+            {{ prop.description }}
+          </div>
+          {% if forloop.index == 1 or forloop.index == 2 %}
+            <div class="btn secondary-btn">
+              Learn More
+            </div>
+          {% endif %}
+          {% if forloop.index == 3 %}
+            <div class="btn secondary-btn">
+              Get Started
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+</div>
