@@ -1,2 +1,2 @@
 # lumen.pro
-The Lumen Protocol. Irradiating trust in professional relationships.
+The Lumen Protocol. Illuminating trust in professional relationships.
